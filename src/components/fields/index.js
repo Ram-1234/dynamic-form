@@ -8,7 +8,7 @@ function InputFields() {
   const [data, setData] = useState({});
   let [keys, setKeys] = useState([]);
   const [submit, setSubmition] = useState(false);
-  console.log("json data", data);
+  //console.log("json data", data);
 
   const styles = {
     conatiner: {
@@ -29,7 +29,6 @@ function InputFields() {
     setKeys(Object.keys(data))
     setData(data)
   }
-
 
   return (
     <div style={styles.conatiner}>

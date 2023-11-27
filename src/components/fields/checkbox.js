@@ -8,14 +8,13 @@ const Checkbox = ({ type, globalData, data }) => {
     const [modal, setModal] = useState(false);
     let [activeKey, setKey] = useState('')
 
-
     useEffect(() => {
         if (!isChecked && (activeKey in data)) {
             let copyData = JSON.parse(JSON.stringify(data));
             delete copyData[activeKey];
             globalData(copyData);
         }
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [isChecked, activeKey])
 
     const handelCheckBox = (e) => {
@@ -24,12 +23,9 @@ const Checkbox = ({ type, globalData, data }) => {
         setModal(e.target.checked);
     };
 
-
-
     const closeModal = () => {
         setModal(false)
     }
-
 
     function submitForm(e, labels, key) {
         e.preventDefault();

@@ -32,7 +32,6 @@ const schema = () => yup.object({
 }).required();
 
 
-
 function Form({ submit, data, keys }) {
     const { register, handleSubmit, formState: { errors } } = useForm({
         resolver: yupResolver(schema)
@@ -43,7 +42,6 @@ function Form({ submit, data, keys }) {
         console.log("submit", data)
         alert("form successfuly submited")
     }
-
 
     return (
         <form onSubmit={submitForm} style={styles.form}>
