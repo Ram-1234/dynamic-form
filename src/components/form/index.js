@@ -41,6 +41,7 @@ function Form({ submit, data, keys }) {
     function submitForm(e, data) {
         e.preventDefault();
         console.log("submit", data)
+        alert("form successfuly submited")
     }
 
 
