@@ -15,3 +15,18 @@
 > 7: After clicking on button you will get new form page what ever you have selected.
 
 Hosted Link: https://65644268a9fd6e0ac3e566d1--serene-mooncake-aa9ddd.netlify.app/
+
+## screenshots
+<img width="1280" alt="Screenshot 2023-11-27 at 1 03 08 PM" src="https://github.com/Ram-1234/dynamic-form/assets/59009687/60920821-5d96-454d-bacf-55d5a242446d">
+
+<img width="1280" alt="Screenshot 2023-11-27 at 1 09 28 PM" src="https://github.com/Ram-1234/dynamic-form/assets/59009687/b14f93ab-5156-409c-95ba-6cc6ab038618">
+
+<img width="1280" alt="Screenshot 2023-11-27 at 1 10 24 PM" src="https://github.com/Ram-1234/dynamic-form/assets/59009687/ec8b4b5c-0325-4031-9dca-1a2c787a74a3">
+
+<img width="1280" alt="Screenshot 2023-11-27 at 1 10 34 PM" src="https://github.com/Ram-1234/dynamic-form/assets/59009687/b6d21915-24fe-462c-b303-71ad9f52ba83">
+
+
+
+
+
+
