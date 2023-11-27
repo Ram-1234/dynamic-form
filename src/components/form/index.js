@@ -7,7 +7,7 @@ const styles = {
     inputDiv: {
         padding: "5px",
         margin: "5px",
-        textAlign: "start"
+        justifyContent: "center",
     },
     button: {
         padding: "5px",
@@ -17,6 +17,12 @@ const styles = {
     label: {
         margin: "5px 0",
         padding: "5px 0"
+    },
+    form: {
+        border: "1px solid lightgrey",
+        padding: "10px 20px",
+        borderRadius: "10px",
+        // justifyContent: "center"
     }
 }
 
@@ -39,7 +45,7 @@ function Form({ submit, data, keys }) {
 
 
     return (
-        <form onSubmit={submitForm} style={{ border: "1px solid lightgrey", padding: "10px 20px", borderRadius: "10px" }}>
+        <form onSubmit={submitForm} style={styles.form}>
             {keys.includes('text') && submit && data['text']?.fields?.map((field, index) => {
                 return (<div key={`${field + index}`} style={styles.inputDiv}>
                     <label>Enter {field}</label><br />

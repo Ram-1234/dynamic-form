@@ -4,7 +4,6 @@ import './style.css';
 
 const iconStyle={ position: "absolute", top: "8px", right: "10px", cursor: "pointer", fontSize: "14px" }
 
-
 const Modal = ({ title,children, closeHandle }) => {
         
     return (
