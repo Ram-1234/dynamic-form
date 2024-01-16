@@ -1,0 +1,71 @@
+.container {
+  background-color: #fff;
+}
+
+.container > h4 {
+  font-size: 20px;
+  margin-top: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.container > p {
+  font-size: 13px;
+  font-family: sans-serif;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+}
+.container > footer > p {
+  font-size: 11px;
+}
+
+.buttons_box {
+  /* border: 0.7px solid lightgrey; */
+  padding: 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.linkedin,
+.github,
+.youtube,
+.insta {
+  cursor: pointer;
+}
+
+.youtube,
+.insta {
+  color: red;
+}
+.linkedin {
+  background-color: "#0966C2";
+  color: #0966c2;
+}
+
+.edit {
+  width: 30%;
+  border-left: 0.9px solid lightgrey;
+  border-right: 0.9px solid lightgrey;
+}
+
+.edit_icon:hover {
+  color: dodgerblue;
+}
+.delete_icon:hover {
+  color: dodgerblue;
+}
+
+a {
+  color: rgb(46, 46, 46);
+}
+a:hover {
+  color: rgb(46, 46, 46);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}

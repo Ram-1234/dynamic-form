@@ -1,0 +1,84 @@
+.user_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card_container {
+  border: 0.7px solid lightgrey;
+  height: auto;
+  width: 290px;
+  background-color: #f5f5f5;
+  margin-top: 10px;
+}
+
+.image_box {
+  border-radius: 5px;
+  padding: 2px;
+  min-height: 150px;
+}
+
+.image_box > img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  background-size: cover;
+}
+
+.user_info_box {
+  background-color: #fff;
+  border: 0.7px solid lightgrey;
+  padding: 15px 0;
+}
+
+.user_info_box > .user_name,
+.email_box,
+.mobile_box,
+.websit_box {
+  font-weight: 500;
+  text-align: left;
+  margin: 0px 20px;
+  margin-bottom: 5px;
+  color: #000;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.user_info_box > .email_box,
+.mobile_box,
+.websit_box {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+}
+
+.user_info_box > .email_box {
+  word-break: break-all;
+}
+
+.email_icon,
+.phone_icon,
+.world_icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+h3,
+p,
+s {
+  padding: 0;
+  margin: 0;
+}
+
+@media (width<500px) {
+  .card_container {
+    width: 80%;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,137 @@
+.dashboard {
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  height: 100vh;
+}
+
+.dashboard_text {
+  width: 50%;
+}
+
+.dashboard_text > h1 {
+  font-size: 65px;
+  opacity: 1;
+  transform: none;
+  font-family: sans-serif;
+  text-align: start;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.dashboard_text > p {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: start;
+}
+
+.dashboard_image {
+  width: 50%;
+  height: auto;
+  padding: 70px 0px;
+  display: flex;
+  justify-content: center;
+}
+.dashboard_image > img {
+  border: 0.5px solid red;
+  border-radius: 12px;
+  width: 50%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+.home_button > button {
+  font-size: 16px;
+}
+
+.home_button > button > .button_icon {
+  width: 20px;
+}
+
+/* media query for mobile and tablet */
+@media (width<796px) {
+  .dashboard {
+    background-color: #e5e5e5;
+    display: inline-block;
+    padding: 0px 50px;
+    height: auto;
+  }
+  .dashboard_image {
+    width: 80%;
+    height: auto;
+    padding: 70px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard_text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .dashboard_text > h1 {
+    font-size: 55px;
+    font-family: sans-serif;
+    text-align: start;
+    margin-bottom: 18px;
+  }
+
+  .dashboard_text > p {
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: start;
+  }
+
+  .home_button > button {
+    font-size: 14px;
+  }
+
+  .home_button > button > .button_icon {
+    width: 16px;
+  }
+}
+
+@media (width<500px) {
+  .dashboard {
+    background-color: #e5e5e5;
+    display: inline-block;
+    padding: 0px 50px;
+    height: auto;
+  }
+  .dashboard_image {
+    width: 80%;
+    height: auto;
+    padding: 70px 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .dashboard_text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .dashboard_text > h1 {
+    font-size: 35px;
+    font-family: sans-serif;
+    text-align: start;
+    margin-bottom: 16px;
+  }
+
+  .dashboard_text > p {
+    font-size: 14px;
+    font-family: sans-serif;
+    text-align: start;
+  }
+
+  .home_button > button {
+    font-size: 12px;
+  }
+
+  .home_button > button > .button_icon {
+    width: 15px;
+  }
+}

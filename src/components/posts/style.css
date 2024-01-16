@@ -1,0 +1,54 @@
+.post_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 290px);
+  justify-content: space-around;
+  align-items: center;
+  margin: 0% 1%;
+}
+
+.post_card_container {
+  background-color: #f5f5f5;
+  border: 1px solid lightgrey;
+  margin: 10px 0;
+  padding: 10px 15px 5px 15px;
+  border-radius: 10px;
+  min-height: 150px;
+  position: relative;
+}
+
+.post_card_container:hover {
+  transform: scale(1.01);
+  background-color: #fff;
+  /* color: #fff; */
+}
+
+.post_title {
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.post_body {
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-size: 13px;
+  /* text-align: center; */
+}
+
+.icon_box {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+.icon_box:hover{
+  background: #fff;
+}
+.like, .dislike,.msg{
+  color:grey;
+  padding-left: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
