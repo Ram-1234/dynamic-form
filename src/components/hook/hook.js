@@ -2,16 +2,24 @@ import { useState, useEffect } from "react";
 
 function FetchData(url) {
   const [data, setData] = useState([]);
+  const [isOffLine,setOffline]=useState(false);
 
   const Api = async () => {
     try {
       let responce = await fetch(url);
       const jsonData = await responce.json();
       if (jsonData && jsonData?.length) {
-        setData(jsonData.slice(0, 20));
+        let respondData= jsonData?.slice(0, 20);
+        setData(respondData);
+        let localStorageSetData = localStorage.setItem('data', JSON.stringify(respondData))
+        console.log(localStorageSetData);
       }
     } catch (error) {
+      console.log('offline');
       console.warn(error);
+      let localStorageGetData = localStorage.getItem('data')
+      setData(JSON.parse(localStorageGetData));
+      setOffline(true);
     }
   };
 
